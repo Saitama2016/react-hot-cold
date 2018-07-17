@@ -1,7 +1,14 @@
 language: node_js
 node_js: node
-cache: 
+cache:
   directories:
-    - node_modules
+  - node_modules
   env:
-    - CI=true
+  - CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: bPWFKMxJHv4FIPqoSDA4V5nUjZy3N09SKFVP2Dec/n9rthCsSUBHyY9I924T/MJFKkdcTUQ5aul5rW7I9A2uo7+PL0EgzbOyre9Jt3ike3nVpJvT0M2wbUP5ru+4J6yAY6Hm+2ZGiIrz2PfsyG4nOTdvk7pTSfOl3GLhx9vH0ha3yvikA04oXQzxB4L0VjZpSSO6dZtwd9HHa3IzdkUv43hB3mnxd1H5V3e1Ht2TgfSwABRpXETd2wDs1Mk09ZtAn4dS0lKOXqqBXAv3svC68NqZrPr89JL662szI+R2a6yYkVmL+ckKsNRwkPPfHJhAT6Wgn0jwZ4AYIVRWspl7K4J+3kVnt79HSCy/JVjUQGLOXWQEGuhNJVO375dH4IfckvyHHByOLXdgMvku4AkyuRqgcYEmCAYqK3m90RSKXrWvySajg1ckLfDCqjtOX2mclaFNMnhU6AkFRErY2Mg4SG0pbbLuwj2F8d6uby57XrBFeaCW8YqbUQkGMwMb24uyNTUSpeOPXIBxZa2KoSHWGQXdo+LTgrly+L6aREEHo+zyO8liywNSb5F28I/8bCGgMImiLXwvBrJlrFw8e0O4ZM50xItwlBvF8Mbxz2ShhpX4z8STI1LhQi9YF4qSzk7vsdIJXmk5eG/IiYtF6CcrYir44eAPOX+XMJhMHFTivoM=
+  app: react-hot-cold
+  on:
+    repo: Saitama2016/react-hot-cold
